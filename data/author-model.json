@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 2,
+  "model": "explainable author-world model",
+  "scope": "Private research prototype. Claims guide generation; they are not presented as a definitive interpretation of Celan.",
+  "sources": [
+    {
+      "id": "user-seven",
+      "author": "Dmitrii Shchukin",
+      "title": "Paul Celan: Sieben Gedichte aus Lichtzwang",
+      "kind": "user-research",
+      "read": "complete",
+      "role": "gold interpretive corpus"
+    },
+    {
+      "id": "hearing-residues",
+      "title": "Celan, Hearing Residues (Lichtzwang)",
+      "kind": "scholarship",
+      "read": "complete-for-model",
+      "role": "hearing, sensory residues, dialogue and survival"
+    },
+    {
+      "id": "willms-wound",
+      "author": "Ralf Willms",
+      "title": "Das Motiv der Wunde im lyrischen Werk von Paul Celan",
+      "kind": "dissertation",
+      "read": "model-relevant-sections-and-conclusion",
+      "role": "wound, ethics, truth, homecoming and utopia"
+    },
+    {
+      "id": "eliezer-silence",
+      "author": "Meret Eliezer",
+      "title": "Aktualisierte Sprache. Schweigen im Zeichen des Eingedenkens bei Paul Celan",
+      "kind": "monograph",
+      "read": "model-relevant-sections-and-conclusion",
+      "role": "silence, remembrance, negativity and language utopia"
+    },
+    {
+      "id": "dichtung-uebergang",
+      "title": "Paul Celan. Dichtung im Übergang",
+      "kind": "edited-volume",
+      "read": "all-contents-plus-model-relevant-articles",
+      "role": "immanent composition, transition, typography, non-human witness"
+    },
+    {
+      "id": "bruckinger-image",
+      "author": "Ute Bruckinger",
+      "title": "A la surface des fonds",
+      "kind": "dissertation",
+      "read": "Schwarzmaut-and-Lichtzwang-sections",
+      "role": "image-poem dialogue, scratches, fractures and paired oppositions"
+    },
+    {
+      "id": "celan-bremen",
+      "author": "Paul Celan",
+      "title": "Bremen speech",
+      "kind": "author-poetics",
+      "read": "complete",
+      "role": "orientation, reality, language after catastrophe and address"
+    },
+    {
+      "id": "celan-meridian",
+      "author": "Paul Celan",
+      "title": "The Meridian",
+      "kind": "author-poetics",
+      "read": "complete",
+      "role": "attention, encounter, breath-turn, individuation and open question"
+    },
+    {
+      "id": "glazova-speak",
+      "author": "Anna Glazova",
+      "title": "Paul Celan: Speak, You Too",
+      "kind": "translation-and-commentary",
+      "read": "model-relevant-poems-and-commentary",
+      "role": "bilingual lexical and interpretive check"
+    },
+    {
+      "id": "primary-corpus",
+      "author": "Paul Celan",
+      "title": "Poems, prose, letters and motif selections from the supplied archive",
+      "kind": "primary-corpus",
+      "read": "machine-extracted-and-manually-sampled",
+      "role": "form, chronology, lexicon and anti-copying profile"
+    }
+  ],
+  "principles": [
+    {
+      "id": "encounter",
+      "weight": 1,
+      "rule": "A poem moves toward a singular Other; the address must alter the route rather than decorate it.",
+      "sources": ["celan-bremen", "celan-meridian", "hearing-residues"]
+    },
+    {
+      "id": "attention",
+      "weight": 0.96,
+      "rule": "Attend to the introduced object's material details before translating it into inherited motifs.",
+      "sources": ["celan-meridian", "user-seven"]
+    },
+    {
+      "id": "object-autonomy",
+      "weight": 0.94,
+      "rule": "Objects are acting nodes and possible witnesses, not replaceable symbols with one fixed key.",
+      "sources": ["user-seven", "dichtung-uebergang", "celan-meridian"]
+    },
+    {
+      "id": "unfinished-memory",
+      "weight": 0.98,
+      "rule": "The past remains unfinished; the poem may preserve a question but must not manufacture closure.",
+      "sources": ["eliezer-silence", "willms-wound"]
+    },
+    {
+      "id": "damaged-language",
+      "weight": 0.91,
+      "rule": "Compression, compounds, syntactic fracture and pauses are semantic operations on damaged language.",
+      "sources": ["user-seven", "hearing-residues", "bruckinger-image"]
+    },
+    {
+      "id": "productive-silence",
+      "weight": 0.97,
+      "rule": "Silence is an ethical interval and a condition of listening, not merely inability or blankness.",
+      "sources": ["eliezer-silence", "celan-meridian", "hearing-residues"]
+    },
+    {
+      "id": "wound-without-redemption",
+      "weight": 1,
+      "rule": "A wound can expose truth, relation or resistance, but it cannot be redeemed by a convenient positive ending.",
+      "sources": ["willms-wound", "dichtung-uebergang"]
+    },
+    {
+      "id": "hope-without-guarantee",
+      "weight": 0.88,
+      "rule": "Birth, ascent and orientation may remain possible, but never as guaranteed salvation.",
+      "sources": ["user-seven", "willms-wound"]
+    },
+    {
+      "id": "internal-composition",
+      "weight": 0.93,
+      "rule": "Meaning must arise from the poem's internal sequence; external references cannot replace compositional logic.",
+      "sources": ["dichtung-uebergang", "user-seven"]
+    },
+    {
+      "id": "openness",
+      "weight": 0.95,
+      "rule": "The final state should remain an addressed residue, path or open question, never a paraphrasable moral.",
+      "sources": ["celan-meridian", "user-seven", "eliezer-silence"]
+    }
+  ],
+  "concepts": {
+    "stone": {
+      "aliases": ["stein", "steine", "steinern", "versteinert", "stone", "rock", "камень", "каменный", "камни"],
+      "sources": ["user-seven", "dichtung-uebergang", "celan-meridian", "primary-corpus"],
+      "profileNote": "The user study supplies the stone-lark and death-light reading; scholarship and Celan's poetics support non-human witness, object autonomy and address; corpus statistics remain a separate formal observation.",
+      "features": ["weight", "hardness", "mute surface", "mineral duration", "ability to be carried"],
+      "tensions": [["weight", "flight"], ["silence", "song"], ["wasteland", "solidarity"]],
+      "form": {"gravity": 0.94, "compression": 0.88, "fragmentation": 0.58, "pause": 0.82, "motion": 0.24, "address": 0.76},
+      "lex": {
+        "de": {"noun": "Stein", "surface": "steinern", "action": "lastet", "residue": "Steinschweigen"},
+        "ru": {"noun": "камень", "surface": "каменный", "action": "тяготеет", "residue": "каменное молчание"}
+      }
+    },
+    "air": {
+      "aliases": ["luft", "air", "aerial", "воздух", "воздушный", "ветер"],
+      "features": ["breathable space", "pressure", "invisibility", "medium of voice"],
+      "tensions": [["breath", "interruption"], ["ascent", "distance"]],
+      "form": {"gravity": 0.22, "compression": 0.34, "fragmentation": 0.31, "pause": 0.52, "motion": 0.91, "address": 0.63},
+      "lex": {
+        "de": {"noun": "Luft", "surface": "luftig", "action": "atmet", "residue": "Atemrest"},
+        "ru": {"noun": "воздух", "surface": "воздушный", "action": "дышит", "residue": "остаток дыхания"}
+      }
+    },
+    "sphere": {
+      "aliases": ["ballon", "balloon", "sphere", "kugel", "шар", "шарик", "сфера"],
+      "features": ["enclosed volume", "curved skin", "inner pressure", "fragile wholeness"],
+      "tensions": [["inside", "outside"], ["wholeness", "rupture"]],
+      "form": {"gravity": 0.32, "compression": 0.42, "fragmentation": 0.49, "pause": 0.38, "motion": 0.72, "address": 0.44},
+      "lex": {
+        "de": {"noun": "Kugel", "surface": "umhüllt", "action": "spannt sich", "residue": "Hüllenrest"},
+        "ru": {"noun": "сфера", "surface": "замкнутый", "action": "натягивается", "residue": "остаток оболочки"}
+      }
+    },
+    "shell": {
+      "aliases": ["hülle", "haut", "shell", "skin", "оболочка", "кожа", "скорлупа"],
+      "features": ["boundary", "tension", "protection", "exposure after rupture"],
+      "tensions": [["protection", "wound"], ["inside", "outside"]],
+      "form": {"gravity": 0.51, "compression": 0.52, "fragmentation": 0.71, "pause": 0.51, "motion": 0.31, "address": 0.48},
+      "lex": {
+        "de": {"noun": "Hülle", "surface": "hautnah", "action": "reißt", "residue": "Hautspur"},
+        "ru": {"noun": "оболочка", "surface": "кожный", "action": "рвётся", "residue": "след кожи"}
+      }
+    },
+    "word": {
+      "aliases": ["wort", "wörter", "word", "слово", "слова", "речь"],
+      "features": ["address", "historical damage", "capacity to name", "arrival"],
+      "tensions": [["speech", "silence"], ["arrival", "failure to reach"]],
+      "form": {"gravity": 0.73, "compression": 0.81, "fragmentation": 0.72, "pause": 0.77, "motion": 0.57, "address": 0.96},
+      "lex": {
+        "de": {"noun": "Wort", "surface": "wortnah", "action": "kommt", "residue": "Wortrest"},
+        "ru": {"noun": "слово", "surface": "словесный", "action": "приходит", "residue": "остаток слова"}
+      }
+    },
+    "silence": {
+      "aliases": ["schweigen", "stumm", "stille", "silence", "mute", "молчание", "немой", "тишина"],
+      "features": ["ethical interval", "listening space", "withdrawn speech", "not-yet"],
+      "tensions": [["absence", "future speech"], ["refusal", "address"]],
+      "form": {"gravity": 0.87, "compression": 0.91, "fragmentation": 0.61, "pause": 0.98, "motion": 0.16, "address": 0.71},
+      "lex": {
+        "de": {"noun": "Schweigen", "surface": "stumm", "action": "wartet", "residue": "Schweigespur"},
+        "ru": {"noun": "молчание", "surface": "немой", "action": "ждёт", "residue": "след молчания"}
+      }
+    },
+    "light": {
+      "aliases": ["licht", "schein", "glanz", "light", "shine", "свет", "сияние", "блик"],
+      "features": ["exposure", "orientation", "coercive visibility", "afterglow"],
+      "tensions": [["orientation", "coercion"], ["clarity", "erasure"]],
+      "form": {"gravity": 0.66, "compression": 0.68, "fragmentation": 0.54, "pause": 0.47, "motion": 0.61, "address": 0.58},
+      "lex": {
+        "de": {"noun": "Licht", "surface": "lichtgezwungen", "action": "entblößt", "residue": "Abglanz"},
+        "ru": {"noun": "свет", "surface": "принуждённый светом", "action": "обнажает", "residue": "отблеск"}
+      }
+    },
+    "darkness": {
+      "aliases": ["dunkel", "nacht", "schatten", "dark", "night", "shadow", "тьма", "ночь", "тень"],
+      "features": ["shelter", "passage", "concealment", "shared interval"],
+      "tensions": [["concealment", "contact"], ["night", "orientation"]],
+      "form": {"gravity": 0.72, "compression": 0.67, "fragmentation": 0.43, "pause": 0.76, "motion": 0.48, "address": 0.69},
+      "lex": {
+        "de": {"noun": "Dunkel", "surface": "nächtlich", "action": "führt hinüber", "residue": "Nachtschatten"},
+        "ru": {"noun": "тьма", "surface": "ночной", "action": "проводит", "residue": "ночная тень"}
+      }
+    },
+    "thicket": {
+      "aliases": ["macchia", "maquis", "thicket", "scrub", "gestrüpp", "кустарник", "чаща", "маквис"],
+      "features": ["hard leaves", "thorns", "concealment", "upright persistence"],
+      "tensions": [["concealment", "contact"], ["injury", "persistence"]],
+      "form": {"gravity": 0.69, "compression": 0.71, "fragmentation": 0.46, "pause": 0.7, "motion": 0.36, "address": 0.73},
+      "lex": {
+        "de": {"noun": "Macchia", "surface": "hartlaubig", "action": "birgt", "residue": "Dornspur"},
+        "ru": {"noun": "маквис", "surface": "жестколистный", "action": "укрывает", "residue": "след колючки"}
+      }
+    },
+    "wound": {
+      "aliases": ["wunde", "vene", "riss", "wound", "vein", "scar", "рана", "вена", "разрыв", "шрам"],
+      "features": ["exposure", "ethical claim", "truth under injury", "simultaneous opening and damage"],
+      "tensions": [["damage", "movement"], ["pain", "recognition"], ["identity", "loss"]],
+      "form": {"gravity": 0.97, "compression": 0.82, "fragmentation": 0.93, "pause": 0.74, "motion": 0.37, "address": 0.83},
+      "lex": {
+        "de": {"noun": "Wunde", "surface": "wachgerissen", "action": "öffnet", "residue": "Wundspur"},
+        "ru": {"noun": "рана", "surface": "разбуженный разрывом", "action": "открывает", "residue": "след раны"}
+      }
+    },
+    "memory": {
+      "aliases": ["gedächtnis", "erinnerung", "eingedenken", "memory", "remembrance", "память", "поминание"],
+      "features": ["unfinished past", "date", "burden", "return without restoration"],
+      "tensions": [["preservation", "erasure"], ["return", "unhomeliness"]],
+      "form": {"gravity": 0.91, "compression": 0.77, "fragmentation": 0.65, "pause": 0.86, "motion": 0.35, "address": 0.82},
+      "lex": {
+        "de": {"noun": "Eingedenken", "surface": "unabgeschlossen", "action": "kehrt wieder", "residue": "Gedächtnisspur"},
+        "ru": {"noun": "память", "surface": "незавершённый", "action": "возвращается", "residue": "след памяти"}
+      }
+    },
+    "trace": {
+      "aliases": ["spur", "rest", "residuum", "trace", "residue", "след", "остаток"],
+      "features": ["presence through absence", "mark", "repeatable difference", "minimal survival"],
+      "tensions": [["presence", "absence"], ["preservation", "erosion"]],
+      "form": {"gravity": 0.79, "compression": 0.9, "fragmentation": 0.69, "pause": 0.85, "motion": 0.28, "address": 0.71},
+      "lex": {
+        "de": {"noun": "Spur", "surface": "resthaft", "action": "bleibt", "residue": "Spur der Spur"},
+        "ru": {"noun": "след", "surface": "остаточный", "action": "остаётся", "residue": "след следа"}
+      }
+    },
+    "gray": {
+      "aliases": ["grau", "graues", "gray", "grey", "серый", "серое", "серость"],
+      "features": ["factual restraint", "intermediate state", "preservation and fading", "anti-decoration"],
+      "tensions": [["preservation", "erasure"], ["light", "darkness"]],
+      "form": {"gravity": 0.76, "compression": 0.86, "fragmentation": 0.51, "pause": 0.81, "motion": 0.23, "address": 0.48},
+      "lex": {
+        "de": {"noun": "Grau", "surface": "grau", "action": "dämpft", "residue": "Graurest"},
+        "ru": {"noun": "серое", "surface": "серый", "action": "гасит", "residue": "серый остаток"}
+      }
+    },
+    "eye": {
+      "aliases": ["auge", "augen", "lid", "sehen", "eye", "sight", "eyelid", "глаз", "веко", "зрение"],
+      "features": ["attention", "exposure", "folded distance", "visual residue"],
+      "tensions": [["seeing", "blindness"], ["proximity", "fold"]],
+      "form": {"gravity": 0.65, "compression": 0.72, "fragmentation": 0.62, "pause": 0.56, "motion": 0.43, "address": 0.72},
+      "lex": {
+        "de": {"noun": "Auge", "surface": "lidnah", "action": "sieht", "residue": "Sehrest"},
+        "ru": {"noun": "глаз", "surface": "у складки века", "action": "видит", "residue": "остаток зрения"}
+      }
+    },
+    "hearing": {
+      "aliases": ["ohr", "hören", "gehör", "hearing", "ear", "listen", "слух", "ухо", "слышать"],
+      "features": ["reception", "alternating speech", "distance", "sensory residue"],
+      "tensions": [["hearing", "noise"], ["listening", "forced speech"]],
+      "form": {"gravity": 0.55, "compression": 0.65, "fragmentation": 0.47, "pause": 0.79, "motion": 0.51, "address": 0.9},
+      "lex": {
+        "de": {"noun": "Gehör", "surface": "hörend", "action": "empfängt", "residue": "Hörrest"},
+        "ru": {"noun": "слух", "surface": "слушающий", "action": "принимает", "residue": "остаток слуха"}
+      }
+    },
+    "machine": {
+      "aliases": ["maschine", "technik", "antenne", "radar", "signal", "machine", "technical", "техника", "машина", "антенна", "сигнал"],
+      "features": ["measurement", "transmission", "control", "standardized language"],
+      "tensions": [["reception", "control"], ["signal", "address"]],
+      "form": {"gravity": 0.59, "compression": 0.63, "fragmentation": 0.58, "pause": 0.36, "motion": 0.74, "address": 0.57},
+      "lex": {
+        "de": {"noun": "Antenne", "surface": "vermessen", "action": "empfängt", "residue": "Signalschatten"},
+        "ru": {"noun": "антенна", "surface": "измеренный", "action": "принимает", "residue": "тень сигнала"}
+      }
+    },
+    "flight": {
+      "aliases": ["flug", "fliegen", "höhe", "steigen", "freigegeben", "startfreigabe", "flight", "fly", "ascent", "полёт", "лететь", "высота", "подъём"],
+      "features": ["ascent", "distance", "orientation", "controlled transition"],
+      "tensions": [["ascent", "retention"], ["height", "instability"]],
+      "form": {"gravity": 0.31, "compression": 0.4, "fragmentation": 0.43, "pause": 0.38, "motion": 0.96, "address": 0.55},
+      "lex": {
+        "de": {"noun": "Flug", "surface": "höhenwärts", "action": "steigt", "residue": "Flugspur"},
+        "ru": {"noun": "полёт", "surface": "высотный", "action": "поднимается", "residue": "след полёта"}
+      }
+    },
+    "thread": {
+      "aliases": ["faden", "schnur", "thread", "cord", "string", "нить", "шнур", "верёвка"],
+      "features": ["connection", "tension", "line", "fragile continuity"],
+      "tensions": [["connection", "cut"], ["ascent", "retention"]],
+      "form": {"gravity": 0.47, "compression": 0.58, "fragmentation": 0.74, "pause": 0.49, "motion": 0.67, "address": 0.79},
+      "lex": {
+        "de": {"noun": "Faden", "surface": "gespannt", "action": "hält", "residue": "Fadenrest"},
+        "ru": {"noun": "нить", "surface": "натянутый", "action": "удерживает", "residue": "остаток нити"}
+      }
+    },
+    "fragment": {
+      "aliases": ["scherbe", "splitter", "bruch", "fragment", "shard", "осколок", "обломок", "фрагмент"],
+      "features": ["damage", "edge", "partial structure", "seal"],
+      "tensions": [["destruction", "preservation"], ["fragment", "structure"]],
+      "form": {"gravity": 0.84, "compression": 0.83, "fragmentation": 0.98, "pause": 0.67, "motion": 0.29, "address": 0.51},
+      "lex": {
+        "de": {"noun": "Scherbe", "surface": "zersplittert", "action": "versiegelt", "residue": "Bruchrand"},
+        "ru": {"noun": "осколок", "surface": "расколотый", "action": "запечатывает", "residue": "край разлома"}
+      }
+    },
+    "birth": {
+      "aliases": ["geburt", "geboren", "birth", "born", "рождение", "родиться"],
+      "features": ["emergence", "gestation", "justice as demand", "uncertain future"],
+      "tensions": [["birth", "death"], ["hope", "guarantee"]],
+      "form": {"gravity": 0.68, "compression": 0.58, "fragmentation": 0.38, "pause": 0.5, "motion": 0.75, "address": 0.71},
+      "lex": {
+        "de": {"noun": "Geburt", "surface": "ungewiß", "action": "trägt aus", "residue": "Nachgeburt"},
+        "ru": {"noun": "рождение", "surface": "негарантированный", "action": "вынашивает", "residue": "послерождение"}
+      }
+    },
+    "death": {
+      "aliases": ["tod", "sterben", "death", "dying", "смерть", "умирать"],
+      "features": ["debt", "date", "extinction", "burden borne by the survivor"],
+      "tensions": [["death", "birth"], ["absence", "address"]],
+      "form": {"gravity": 0.98, "compression": 0.9, "fragmentation": 0.68, "pause": 0.92, "motion": 0.12, "address": 0.79},
+      "lex": {
+        "de": {"noun": "Tod", "surface": "tödlich", "action": "lastet", "residue": "Sterbelicht"},
+        "ru": {"noun": "смерть", "surface": "смертельный", "action": "тяготеет", "residue": "свет умирания"}
+      }
+    },
+    "beacon": {
+      "aliases": ["bake", "baken", "leitstrahl", "beacon", "guidance", "маяк", "привод", "луч наведения"],
+      "features": ["orientation", "collection of signs", "landing guidance", "night work"],
+      "tensions": [["guidance", "danger"], ["arrival", "night"]],
+      "form": {"gravity": 0.52, "compression": 0.62, "fragmentation": 0.42, "pause": 0.44, "motion": 0.75, "address": 0.79},
+      "lex": {
+        "de": {"noun": "Bake", "surface": "nachtbeladen", "action": "weist ein", "residue": "Leitrest"},
+        "ru": {"noun": "маяк", "surface": "нагруженный ночью", "action": "наводит", "residue": "остаток наведения"}
+      }
+    },
+    "mine": {
+      "aliases": ["mine", "tretmine", "minen", "landmine", "мина", "мины"],
+      "features": ["delayed catastrophe", "embedded danger", "war technology", "trigger"],
+      "tensions": [["latency", "explosion"], ["destruction", "birth"]],
+      "form": {"gravity": 0.96, "compression": 0.86, "fragmentation": 0.94, "pause": 0.83, "motion": 0.11, "address": 0.42},
+      "lex": {
+        "de": {"noun": "Tretmine", "surface": "eingelassen", "action": "wartet", "residue": "Sprengspur"},
+        "ru": {"noun": "мина", "surface": "заложенный", "action": "ждёт", "residue": "взрывной след"}
+      }
+    },
+    "loss": {
+      "aliases": ["verlust", "verloren", "verlornem", "verlorn", "verlustig", "loss", "lost", "утрата", "потеря", "утраченный"],
+      "features": ["absence", "mold for a trace", "unrecoverable origin", "material for casting"],
+      "tensions": [["loss", "form"], ["absence", "trace"]],
+      "form": {"gravity": 0.93, "compression": 0.85, "fragmentation": 0.72, "pause": 0.9, "motion": 0.2, "address": 0.75},
+      "lex": {
+        "de": {"noun": "Verlust", "surface": "verloren", "action": "gibt die Form", "residue": "Verlustspur"},
+        "ru": {"noun": "утрата", "surface": "утраченный", "action": "даёт форму", "residue": "след утраты"}
+      }
+    },
+    "breath": {
+      "aliases": ["atem", "atmen", "breath", "respiration", "дыхание", "дышать"],
+      "features": ["turn", "alternation", "life interval", "speech condition"],
+      "tensions": [["speech", "pause"], ["self", "other"]],
+      "form": {"gravity": 0.49, "compression": 0.6, "fragmentation": 0.41, "pause": 0.94, "motion": 0.62, "address": 0.92},
+      "lex": {
+        "de": {"noun": "Atem", "surface": "atemwendend", "action": "wechselt", "residue": "Atemrest"},
+        "ru": {"noun": "дыхание", "surface": "повёрнутый дыханием", "action": "чередуется", "residue": "остаток дыхания"}
+      }
+    },
+    "water": {
+      "aliases": ["wasser", "grundwasser", "flut", "water", "flood", "вода", "поток", "грунтовые воды"],
+      "features": ["underground passage", "trace-bearing flow", "submersion", "return"],
+      "tensions": [["surface", "depth"], ["erasure", "trace"]],
+      "form": {"gravity": 0.53, "compression": 0.48, "fragmentation": 0.31, "pause": 0.44, "motion": 0.88, "address": 0.54},
+      "lex": {
+        "de": {"noun": "Grundwasser", "surface": "unterirdisch", "action": "murmelt", "residue": "Wasserspur"},
+        "ru": {"noun": "подземная вода", "surface": "подземный", "action": "бормочет", "residue": "водный след"}
+      }
+    },
+    "unknown": {
+      "aliases": [],
+      "features": ["uninterpreted material", "orthographic body", "foreignness", "demand for attention"],
+      "tensions": [["foreignness", "address"], ["opacity", "attention"]],
+      "form": {"gravity": 0.61, "compression": 0.64, "fragmentation": 0.55, "pause": 0.67, "motion": 0.38, "address": 0.7},
+      "lex": {
+        "de": {"noun": "Fremdkörper", "surface": "ungedeutet", "action": "tritt ein", "residue": "Schriftspur"},
+        "ru": {"noun": "инородное тело", "surface": "неистолкованный", "action": "входит", "residue": "след письма"}
+      }
+    }
+  },
+  "claims": [
+    {"id":"c001","from":"stone","relation":"sides_with","to":"du","operation":"witness","weight":1,"sources":["user-seven","dichtung-uebergang","celan-meridian"],"note":"In the lark-shaped stone, a non-human object takes the side of the addressed Other."},
+    {"id":"c002","from":"stone","relation":"holds_tension","to":"flight","operation":"inversion","weight":1,"sources":["user-seven"],"note":"Stone and bird join weight to ascent, silence to song."},
+    {"id":"c003","from":"stone","relation":"carries","to":"death","operation":"burden","weight":0.92,"sources":["user-seven"],"note":"The stone carries a dying light rather than merely signifying inert matter."},
+    {"id":"c004","from":"flight","relation":"destabilizes","to":"height","operation":"inversion","weight":0.86,"sources":["user-seven"],"note":"Height itself can whirl and lose stability."},
+    {"id":"c005","from":"darkness","relation":"approaches_through","to":"du","operation":"approach","weight":1,"sources":["user-seven"],"note":"Darkening can be a movement across toward the Other."},
+    {"id":"c006","from":"light","relation":"coerces","to":"movement","operation":"constraint","weight":1,"sources":["user-seven","eliezer-silence"],"note":"Light can impose a necessity of movement rather than offer innocent clarity."},
+    {"id":"c007","from":"light","relation":"leaves","to":"trace","operation":"residue","weight":0.91,"sources":["user-seven"],"note":"Afterglow is residual light carried as a burden."},
+    {"id":"c008","from":"loss","relation":"casts","to":"trace","operation":"fold","weight":1,"sources":["user-seven"],"note":"Loss can serve as a mold that produces a mask or trace without restoring presence."},
+    {"id":"c009","from":"trace","relation":"fades_into","to":"gray","operation":"erasure","weight":0.95,"sources":["user-seven"],"note":"Trace moves toward gray, where preservation and disappearance coexist."},
+    {"id":"c010","from":"gray","relation":"holds_tension","to":"erasure","operation":"residue","weight":0.92,"sources":["user-seven"],"note":"Gray soberly preserves while erasing and rejects decorative resolution."},
+    {"id":"c011","from":"fragment","relation":"seals","to":"wound","operation":"preserve","weight":0.93,"sources":["user-seven"],"note":"Fragments can become the structure that seals damaged space."},
+    {"id":"c012","from":"mine","relation":"delays","to":"catastrophe","operation":"latency","weight":1,"sources":["user-seven"],"note":"The mine embeds potential catastrophe in space and time."},
+    {"id":"c013","from":"mine","relation":"holds_tension","to":"birth","operation":"inversion","weight":0.87,"sources":["user-seven"],"note":"Destructive technology and a demand for just birth coexist without cancellation."},
+    {"id":"c014","from":"birth","relation":"opens_without_guarantee","to":"future","operation":"opening","weight":0.92,"sources":["user-seven","willms-wound"],"note":"Birth carries radical hope but does not promise salvation."},
+    {"id":"c015","from":"death","relation":"burdens","to":"survivor","operation":"burden","weight":0.93,"sources":["user-seven"],"note":"Death may be borne or carried to completion as a survivor's debt."},
+    {"id":"c016","from":"wound","relation":"opens","to":"movement","operation":"breach","weight":0.91,"sources":["user-seven","willms-wound"],"note":"Violent waking and injury can reopen movement without healing the wound."},
+    {"id":"c017","from":"wound","relation":"exposes","to":"truth","operation":"witness","weight":1,"sources":["willms-wound"],"note":"The wound makes an ethical demand for recognition and truth."},
+    {"id":"c018","from":"wound","relation":"resists","to":"redemption","operation":"refusal","weight":1,"sources":["willms-wound","dichtung-uebergang"],"note":"Pain cannot be resolved by a compensatory promise."},
+    {"id":"c019","from":"wound","relation":"coexists_with","to":"fruitful_process","operation":"simultaneity","weight":0.9,"sources":["willms-wound"],"note":"Wounding and productive movement can occur simultaneously rather than sequentially."},
+    {"id":"c020","from":"memory","relation":"keeps_unfinished","to":"past","operation":"remembrance","weight":1,"sources":["eliezer-silence","willms-wound"],"note":"Remembrance refuses to treat the past as completed."},
+    {"id":"c021","from":"memory","relation":"returns_without_restoring","to":"home","operation":"homecoming","weight":0.94,"sources":["willms-wound"],"note":"Homecoming includes the uncanny and does not restore an intact origin."},
+    {"id":"c022","from":"silence","relation":"makes_room_for","to":"listening","operation":"interval","weight":1,"sources":["eliezer-silence","hearing-residues"],"note":"Silence can be an ethical interval in which the Other can be heard."},
+    {"id":"c023","from":"silence","relation":"holds_tension","to":"future_speech","operation":"not_yet","weight":0.96,"sources":["eliezer-silence"],"note":"Silence holds both no-longer and not-yet rather than simple lack."},
+    {"id":"c024","from":"silence","relation":"refuses","to":"premature_answer","operation":"refusal","weight":1,"sources":["eliezer-silence"],"note":"Ethical negativity leaves the question open instead of producing positivity too soon."},
+    {"id":"c025","from":"breath","relation":"alternates_with","to":"du","operation":"dialogue","weight":1,"sources":["hearing-residues","celan-meridian"],"note":"Breath-turn is an alternation of speaking and listening, not only inward transformation."},
+    {"id":"c026","from":"hearing","relation":"receives","to":"distance","operation":"reception","weight":0.92,"sources":["hearing-residues"],"note":"Hearing operates across distance and survives in sensory residues."},
+    {"id":"c027","from":"hearing","relation":"resists","to":"forced_speech","operation":"refusal","weight":0.91,"sources":["hearing-residues"],"note":"Listening and dialogue oppose standardized or coerced speech."},
+    {"id":"c028","from":"word","relation":"arrives_toward","to":"du","operation":"approach","weight":1,"sources":["celan-bremen","celan-meridian","glazova-speak"],"note":"The poem is on the way like a message seeking a singular heartland."},
+    {"id":"c029","from":"word","relation":"passes_through","to":"silence","operation":"breath_turn","weight":0.98,"sources":["celan-meridian","eliezer-silence"],"note":"Actualized language approaches silence while remaining an address."},
+    {"id":"c030","from":"word","relation":"is_wounded_by","to":"reality","operation":"exposure","weight":1,"sources":["celan-bremen"],"note":"Language moves with a mortal speaker who has been wounded by reality."},
+    {"id":"c031","from":"word","relation":"orients","to":"reality","operation":"orientation","weight":0.96,"sources":["celan-bremen"],"note":"Writing sketches reality and asks where from and where to."},
+    {"id":"c032","from":"attention","relation":"names_as","to":"du","operation":"encounter","weight":1,"sources":["celan-meridian"],"note":"Attentive naming allows the addressed thing to co-speak its own time."},
+    {"id":"c033","from":"object","relation":"can_witness","to":"history","operation":"witness","weight":0.96,"sources":["dichtung-uebergang","user-seven"],"note":"Non-human objects can join a community of witnesses."},
+    {"id":"c034","from":"water","relation":"murmurs","to":"trace","operation":"underpass","weight":0.88,"sources":["dichtung-uebergang"],"note":"Underground-water traces provide a non-human, submerged mode of testimony."},
+    {"id":"c035","from":"fragment","relation":"breaks","to":"typography","operation":"line_break","weight":0.9,"sources":["bruckinger-image","dichtung-uebergang"],"note":"Graphic fractures and blank space are part of meaning, not page decoration."},
+    {"id":"c036","from":"scratch","relation":"inscribes","to":"wound","operation":"mark","weight":0.89,"sources":["bruckinger-image"],"note":"Engraved marks can be read as primitive traces and psychic lesions."},
+    {"id":"c037","from":"image","relation":"resonates_with","to":"word","operation":"pairing","weight":0.86,"sources":["bruckinger-image"],"note":"Image and poem remain equal partners connected by motif, gesture and opposition."},
+    {"id":"c038","from":"eye","relation":"folds","to":"distance","operation":"fold","weight":0.94,"sources":["user-seven"],"note":"The eyelid fold turns intimate proximity into a structured distance."},
+    {"id":"c039","from":"eye","relation":"leaves","to":"trace","operation":"residue","weight":0.87,"sources":["user-seven","hearing-residues"],"note":"Seeing persists as a residue rather than intact perception."},
+    {"id":"c040","from":"machine","relation":"receives","to":"signal","operation":"technicalize","weight":0.9,"sources":["user-seven","hearing-residues"],"note":"Technical vocabulary can model reception, control and transition without becoming romantic metaphor."},
+    {"id":"c041","from":"beacon","relation":"guides","to":"word","operation":"arrival","weight":1,"sources":["user-seven"],"note":"Collected beacons guide an arriving word through the night."},
+    {"id":"c042","from":"flight","relation":"increases","to":"distance","operation":"approach","weight":0.93,"sources":["user-seven"],"note":"Ascent can make approach harder by increasing distance."},
+    {"id":"c043","from":"thread","relation":"holds","to":"flight","operation":"retention","weight":0.92,"sources":["user-seven"],"note":"A tether can connect ascent to the ground while also restraining it."},
+    {"id":"c044","from":"shell","relation":"ruptures_into","to":"trace","operation":"breach","weight":0.9,"sources":["user-seven","willms-wound"],"note":"A boundary can expose its interior through rupture and leave a material remainder."},
+    {"id":"c045","from":"air","relation":"carries","to":"voice","operation":"transmission","weight":0.89,"sources":["hearing-residues","celan-meridian"],"note":"Air is both the medium of voice and the interval that can interrupt it."},
+    {"id":"c046","from":"sphere","relation":"holds_tension","to":"rupture","operation":"pressure","weight":0.88,"sources":["user-seven"],"note":"A complete shell is defined by the pressure that may break it."},
+    {"id":"c047","from":"darkness","relation":"shelters","to":"persistence","operation":"concealment","weight":0.91,"sources":["user-seven","hearing-residues"],"note":"The thicket and darkness can preserve resistant life and permit passage."},
+    {"id":"c048","from":"scientific_name","relation":"shelters","to":"object","operation":"renaming","weight":0.84,"sources":["hearing-residues"],"note":"Exact names can avoid contaminated symbolism while enabling poem-specific symbolic force."},
+    {"id":"c049","from":"compound","relation":"compresses","to":"relation","operation":"neologism","weight":0.95,"sources":["user-seven","hearing-residues"],"note":"Compounds rename the world by forcing multiple relations into one lexical event."},
+    {"id":"c050","from":"line_break","relation":"delays","to":"meaning","operation":"suspension","weight":1,"sources":["user-seven","bruckinger-image"],"note":"A delayed prefix, split word or isolated part can make meaning arrive late."},
+    {"id":"c051","from":"blank_space","relation":"structures","to":"encounter","operation":"interval","weight":0.95,"sources":["dichtung-uebergang","celan-meridian"],"note":"Page emptiness and pause create an active interval for encounter."},
+    {"id":"c052","from":"poem","relation":"moves_toward","to":"du","operation":"encounter","weight":1,"sources":["celan-bremen","celan-meridian"],"note":"The poem is solitary and on the way, which makes encounter possible."},
+    {"id":"c053","from":"poem","relation":"returns_through","to":"self","operation":"meridian","weight":0.9,"sources":["celan-meridian"],"note":"The route can be a detour from self through language toward an answering Other and back."},
+    {"id":"c054","from":"question","relation":"opens","to":"gap","operation":"opening","weight":0.94,"sources":["celan-meridian","eliezer-silence"],"note":"An open question leads to an open or empty place rather than a final proposition."},
+    {"id":"c055","from":"compression","relation":"removes","to":"explanation","operation":"shortening","weight":1,"sources":["user-seven"],"note":"Manuscript revisions often remove connective explanation while retaining essential words."},
+    {"id":"c056","from":"technical_lexicon","relation":"maps","to":"transition","operation":"technicalize","weight":0.9,"sources":["user-seven"],"note":"Aviation and guidance vocabulary maps phases of transition, control and uncertain movement."},
+    {"id":"c057","from":"mask","relation":"records","to":"loss","operation":"casting","weight":0.9,"sources":["user-seven"],"note":"The mask is a cast and trace of absence rather than simple concealment."},
+    {"id":"c058","from":"residue","relation":"keeps_open","to":"address","operation":"ending","weight":0.96,"sources":["user-seven","celan-meridian"],"note":"What remains can continue to address the Other after presence has receded."},
+    {"id":"c059","from":"thicket","relation":"shelters","to":"persistence","operation":"concealment","weight":1,"sources":["user-seven","hearing-residues"],"note":"Hard-leaved scrub combines hiding, thorned resistance and the ability to remain upright."},
+    {"id":"c060","from":"thicket","relation":"passes_through","to":"darkness","operation":"approach","weight":0.94,"sources":["user-seven"],"note":"The thicket's dark passage prepares a movement toward the addressed Other rather than simple withdrawal."}
+  ]
+}
