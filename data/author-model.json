@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "model": "explainable author-world model",
-  "scope": "Private research prototype. Claims guide generation; they are not presented as a definitive interpretation of Celan.",
+  "scope": "Research prototype. Claims guide generation; they are not presented as a definitive interpretation of Celan.",
   "sources": [
     {
       "id": "user-seven",
